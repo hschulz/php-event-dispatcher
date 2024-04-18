@@ -4,13 +4,12 @@ declare(strict_types=1);
 
 namespace Hschulz\Dispatcher;
 
-use Psr\EventDispatcher\StoppableEventInterface;
 use Serializable;
 
 /**
  * Interface for events.
  */
-interface Event extends StoppableEventInterface, Serializable
+interface Event extends Serializable
 {
     /**
      * Get the event name.

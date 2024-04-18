@@ -5,12 +5,11 @@ declare(strict_types=1);
 namespace Hschulz\Dispatcher;
 
 use Hschulz\Dispatcher\Event;
-use Psr\EventDispatcher\ListenerProviderInterface as PsrListenerProviderInterface;
 
 /**
  * Interface for listener providers.
  */
-interface ListenerProviderInterface extends PsrListenerProviderInterface
+interface ListenerProviderInterface
 {
     /**
      * Returns an iterable of listeners for the provided event.

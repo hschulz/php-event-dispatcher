@@ -6,12 +6,11 @@ namespace Hschulz\Dispatcher;
 
 use Hschulz\Dispatcher\Event;
 use Hschulz\Dispatcher\ListenerProviderInterface;
-use Psr\EventDispatcher\EventDispatcherInterface as PsrEventDispatcherInterface;
 
 /**
  * Interface for the event dispatcher.
  */
-interface EventDispatcherInterface extends PsrEventDispatcherInterface
+interface EventDispatcherInterface
 {
     /**
      * Returns the listener provider.
