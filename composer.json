@@ -1,0 +1,28 @@
+{
+    "name": "hschulz/php-event-dispatcher",
+    "description": "An implementation of the PSR-14 Event Dispatcher Interface.",
+    "type": "library",
+    "keywords": ["php", "event", "dispatcher"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hauke Schulz",
+            "email": "hauke27@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4.0",
+        "psr/event-dispatcher": "^1.0.0"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Hschulz\\Dispatcher\\": "src"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "apcu-autoloader": true
+    }
+}
