@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Hschulz\Router;
+namespace Hschulz\Dispatcher;
 
 use Hschulz\Dispatcher\EventInterface;
 
