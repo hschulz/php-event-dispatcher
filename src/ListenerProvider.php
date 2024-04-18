@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Hschulz\Dispatcher;
 
 use Hschulz\Dispatcher\AbstractListenerProvider;
-use Hschulz\Dispatcher\Event;
+use Hschulz\Dispatcher\EventInterface;
 
 /**
  * Listener provider class.
@@ -60,10 +60,10 @@ class ListenerProvider extends AbstractListenerProvider
     /**
      * Returns all listeners for a given event.
      *
-     * @param Event $event The event to get listeners for
+     * @param EventInterface $event The event to get listeners for
      * @return array The listeners for the given event
      */
-    public function getListenersForEvent(Event $event): array
+    public function getListenersForEvent(EventInterface $event): array
     {
         $name = $event->getName();
 

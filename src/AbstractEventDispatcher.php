@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Hschulz\Dispatcher;
 
-use Hschulz\Dispatcher\Event;
+use Hschulz\Dispatcher\EventInterface;
 use Hschulz\Dispatcher\EventDispatcherInterface;
 use Hschulz\Dispatcher\ListenerProvider;
 use Hschulz\Dispatcher\ListenerProviderInterface;
@@ -32,8 +32,8 @@ abstract class AbstractEventDispatcher implements EventDispatcherInterface
      * The event is passed to all listeners and can be modified by them.
      * The modified event is then returned.
      *
-     * @param Event $event The event to dispatch
-     * @return Event The dispatched event , possibly modified
+     * @param EventInterface $event The event to dispatch
+     * @return EventInterface The dispatched event , possibly modified
      */
-    public abstract function dispatch(Event $event): Event;
+    public abstract function dispatch(EventInterface $event): EventInterface;
 }

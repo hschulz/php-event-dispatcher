@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Hschulz\Dispatcher;
 
-use Hschulz\Dispatcher\Event;
+use Hschulz\Dispatcher\EventInterface;
 use Hschulz\Dispatcher\ListenerProviderInterface;
 
 /**
@@ -30,8 +30,8 @@ interface EventDispatcherInterface
     /**
      * Dispatches the provided event.
      *
-     * @param Event $event The event to dispatch
-     * @return Event The dispatched and possibly modified event
+     * @param EventInterface $event The event to dispatch
+     * @return EventInterface The dispatched and possibly modified event
      */
-    public function dispatch(Event $event): Event;
+    public function dispatch(EventInterface $event): EventInterface;
 }

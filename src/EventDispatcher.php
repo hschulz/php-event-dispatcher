@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Hschulz\Dispatcher;
 
 use Hschulz\Dispatcher\AbstractEventDispatcher;
-use Hschulz\Dispatcher\Event;
+use Hschulz\Dispatcher\EventInterface;
 
 /**
  * Event dispatcher class.
@@ -15,10 +15,10 @@ class EventDispatcher extends AbstractEventDispatcher
     /**
      * Dispatches the provided event.
      *
-     * @param Event $event The event to dispatch
-     * @return Event The dispatched event
+     * @param EventInterface $event The event to dispatch
+     * @return EventInterface The dispatched event
      */
-    public function dispatch(Event $event): Event {
+    public function dispatch(EventInterface $event): EventInterface {
 
         /*
          * Clone the event to prevent modification

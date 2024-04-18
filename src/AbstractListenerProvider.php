@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Hschulz\Dispatcher;
 
-use Hschulz\Dispatcher\Event;
+use Hschulz\Dispatcher\EventInterface;
 use Hschulz\Dispatcher\ListenerProviderInterface;
 
 /**
@@ -21,8 +21,8 @@ abstract class AbstractListenerProvider implements ListenerProviderInterface
     /**
      * Returns an iterable of listeners for the provided event.
      *
-     * @param Event $event The event to get listeners for
+     * @param EventInterface $event The event to get listeners for
      * @return iterable The listeners for the provided event
      */
-    public abstract function getListenersForEvent(Event $event): iterable;
+    public abstract function getListenersForEvent(EventInterface $event): iterable;
 }
