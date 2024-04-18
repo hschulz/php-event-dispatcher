@@ -4,12 +4,10 @@ declare(strict_types=1);
 
 namespace Hschulz\Dispatcher;
 
-use Serializable;
-
 /**
  * Interface for events.
  */
-interface Event extends Serializable
+interface EventInterface
 {
     /**
      * Get the event name.
