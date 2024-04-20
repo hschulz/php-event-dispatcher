@@ -23,7 +23,8 @@ abstract class AbstractEventDispatcher implements EventDispatcherInterface
      *
      * @param ListenerProviderInterface|null $listenerProvider The listener provider
      */
-    public function __construct(?ListenerProviderInterface $listenerProvider = null) {
+    public function __construct(?ListenerProviderInterface $listenerProvider = null)
+    {
         $this->listenerProvider = $listenerProvider ?? new ListenerProvider();
     }
 

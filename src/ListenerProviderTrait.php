@@ -22,7 +22,8 @@ trait ListenerProviderTrait
      *
      * @return ListenerProviderInterface The listener provider
      */
-    public function getListenerProvider(): ListenerProviderInterface {
+    public function getListenerProvider(): ListenerProviderInterface
+    {
         return $this->listenerProvider;
     }
 
@@ -32,7 +33,8 @@ trait ListenerProviderTrait
      * @param ListenerProviderInterface $listenerProvider The listener provider
      * @return void
      */
-    public function setListenerProvider(ListenerProviderInterface $listenerProvider): void {
+    public function setListenerProvider(ListenerProviderInterface $listenerProvider): void
+    {
         $this->listenerProvider = $listenerProvider;
     }
 }
