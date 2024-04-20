@@ -14,16 +14,16 @@ trait ListenerProviderTrait
     /**
      * The listener provider.
      *
-     * @var ListenerProviderInterface|null
+     * @var ListenerProviderInterface
      */
-    protected ?ListenerProviderInterface $listenerProvider;
+    protected ListenerProviderInterface $listenerProvider;
 
     /**
      * Returns the listener provider.
      *
-     * @return ListenerProviderInterface|null The listener provider
+     * @return ListenerProviderInterface The listener provider
      */
-    public function getListenerProvider(): ?ListenerProviderInterface
+    public function getListenerProvider(): ListenerProviderInterface
     {
         return $this->listenerProvider;
     }
